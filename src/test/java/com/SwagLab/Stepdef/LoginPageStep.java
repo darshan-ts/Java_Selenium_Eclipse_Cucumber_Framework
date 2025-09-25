@@ -61,7 +61,8 @@ public void user_should_be_navigate_to_inventory_page_and_login_successfull() {
 
 	
 	String expTitle="inventory";
-	Assert.assertTrue(BrowserUtil.getDriver().getCurrentUrl().contains(expTitle));
+	//Assert.assertTrue(BrowserUtil.getDriver().getCurrentUrl().contains(expTitle));
+	Assert.assertTrue(lp.getAppUrl().contains(expTitle));
 	System.out.println("Login Completed...!");
 			
 }

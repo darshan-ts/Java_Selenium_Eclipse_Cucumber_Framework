@@ -60,7 +60,12 @@ public class LoginPage
 		loginBtn.click();
 		
 		//login page--->inventory page
-		return new InventoryPage();
+		return new InventoryPage(driver);
+	}
+	
+	public String getAppUrl()
+	{
+		return driver.getCurrentUrl();
 	}
 	
 	
